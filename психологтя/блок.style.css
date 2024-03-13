@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    background: radial-gradient(circle at 25% top,#fff,#141031);
+}
+p {
+    margin: 0;
+}
+.h1 {
+    font-size: 1.5em;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+}
+.h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+}
+.h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    color: #fff;
+}
+header {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0B1957;
+    align-items: center;
+    height: 40px;
+    top: 0; left: 0; right: 0;
+    padding: 1% 2%;
+}
+select {
+    margin: 5% 0 10% 0;
+    width: 50%;
+    border:1px solid #000;
+    border-radius: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 80px ;
+}
+.burger-btn {
+    position: relative;
+    height: 30px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: none;
+}
+.burger_link {
+    color: #fff;
+    margin: 0 20px;
+}
+@media (max-width :789px) {
+    .burger-btn {
+        display: block;
+        margin-left: 100px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 10px 0;
+    }
+    header li {
+        margin: 5px 0;
+    }
+    .burger_link {
+        display: block;
+        color: #fff;
+    }
+    .burger {
+        position: absolute;
+        background-color: #0B1957;
+        right: 0;
+        top:-450px;
+        padding: 40px 0 0 0 ;
+        width: 145px;
+        transition:.5s;
+    }
+    header.open .burger {
+        transform: translateY(450px);
+    }
+}
+.burger-btn span {
+    position: absolute;
+    height: 1px;
+    width: 26px;
+    background-color: #fff;
+    left: 8px;
+    transition: transform .5s, opasity .5s;
+}
+.burger-btn span:nth-child(1) {
+    transform: translateY(8px);
+}
+.burger-btn span:nth-child(3) {
+    transform: translateY(-8px);
+}
+header.open .burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+header.open .burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    width: 15px;
+}
+header.open .burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    width: 15px;
+}
+header button {
+    position: relative;
+    z-index: 6;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    width: 60px;
+    height: 30px;
+    border-radius: 10PX;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+header button:hover {
+    background-color: black;
+    color: #fff;
+}
+header button a {
+    color: #141031;
+}
+header li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    color: #fff;
+}
+header .row {
+    justify-content: center;
+    align-items: center;
+}
+.button1 {
+    font-size: 1em;
+    transition-duration: 0.4s;
+    width: 6%;
+    height: 50%;
+    border-radius: 20PX;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    margin-right: 4%;
+}
+.button1:hover {
+    background-color: black;
+    color: #fff;
+}
+.img1 {
+    width: 30%;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+li {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+.filter {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2%;
+    /* border-radius: 20px;
+    left: 15px; */
+    top: 20%;
+    border-radius: 20px;
+    width: 20%;
+    margin: 3%;
+    box-shadow: 0 0 10px 3px #5884e7;
+}
+.fltr {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: flex-start;
+    margin: 5% 0 10% 0 ;
+}
+.vvod {
+    height: 80%;
+    width: 50%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 10%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    
+}
+select {
+    margin: 5% 0 10% 0;
+    width: 50%;
+    border:1px solid #000;
+    border-radius: 20px;
+}
+.card0 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+    margin: 8% 0  0 30%;
+}
+
+.card {
+    width: 280px;
+    height: 340px;
+    border:1px solid #000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2%;
+    margin: 2%;
+}
+.img2 {
+    width: 70%;
+    height: 40%;
+}
+.button2 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 15%;
+    justify-content: center;
+    border-radius: 20PX;
+    background-color: #141031;
+    color: #fff;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    border:1px solid #0B1957;
+}
+.button2:focus {
+    background-color: #fff;
+    color: #141031;
+}
+h1 {
+    font-size: 1.5em;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+}
+.h1_2 {
+    font-size: 1.5em;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #141031;
+}
+.h1_1 {
+    font-size: 1.5em;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #141031
+}
+.h2_2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.footer {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    width: 100%s;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: center;
+    height: 150px;
+    padding: 0 2%;
+}
+.menu3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    color: #141031;
+}
+.menu3_2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    header {
+        height: 8%;
+    }
+    nav ul {
+        margin-right: 40px;
+    }
+    nav li {
+        font-size: .7em;
+    }
+    .button1 {
+        width: 10%;
+        height: 40%;
+    }
+    h1 {
+        font-size: .9em;
+        width: 120px;
+    }
+    .h2 {
+        font-size: 13px;
+    }
+    .filter {
+        width: 20%;
+    }
+    .fltr {
+        width: 105%;
+    }
+    .fltr .row {
+        margin: 0 10% 0 0;
+    }
+    .vvod {
+        width: 42px;
+    }
+    select {
+        width: 65%;
+    }
+    .card0 {
+        margin: 12% 0 0 30%;
+    }
+    .card {
+        height: 240px;
+        width: 180px;
+    }
+    .img2 {
+        width: 55%;
+    }
+    .h1_2 {
+        font-size: 1em;
+    }
+}
+@media (min-width: 485px) and (max-width: 767px) {
+    header {
+        height: 5%;
+    }
+    .button1 {
+        visibility: hidden;
+    }
+    .filter {
+        font-size: 6px;
+        font-size: .4em;
+    }
+    select {
+        font-size: 6px;
+        width: 80%;
+    }
+    .h1 {
+        font-size: 1.1em;
+    }
+    .vvod {
+        font-size: 6px;
+        height: 30%;
+        width: 80%;
+    }
+    .fltr {
+        margin: 5% 0 5% 0;
+        width: 100%;
+    }
+    .card0 {
+        margin-top: 15%;
+    }
+    .card {
+        width: 80px;
+        height: 132px;
+    }
+    .h1_2 {
+        font-size: .7em;
+    }
+    .h2_2 {
+        font-size: .4em;
+    }
+    .button2 {
+        width: 80%;
+        height: 8%;
+        font-size: .4em;
+    }
+}
+@media (max-width:484px ) {
+    .button1 {
+        visibility: hidden;
+    }
+    .button2 {
+        height: 27px;
+    }
+    .filter {
+        position: relative;
+        margin: 30% 10% 0 10%;
+        z-index: 2;
+        width: 70%;
+    }
+    .card0 {
+        margin: 8%;
+        width: 78%;
+    }
+    .heder {
+        z-index: 3;
+    }
+    .card {
+        width: 100%;
+        height: 230px;
+    }
+    .img2 {
+        width: 45%;
+    }
+    .h1_2 {
+        font-size: 1em;
+    }
+    .h1_1 {
+        font-size: 1em;
+    }
+    .h2 {
+        font-size: .7em;
+    }
+    header button {
+        width: 40px;
+        height: 20px;
+    }
+    h1 {
+        font-size: .9em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}

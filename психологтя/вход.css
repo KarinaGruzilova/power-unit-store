@@ -1,0 +1,88 @@
+.frame1_1 {
+    background: #0b091c;
+}
+.frame1 {
+    display: flex;
+    justify-content: center;
+    background: url(https://imgbly.com/ib/bc7e60lcOQ.png) no-repeat center;
+    padding: 5%;
+    height: 600px;
+}
+.login-box {
+    width: 400px;
+    height: 500px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2%;
+    align-items: center;
+    box-sizing: border-box;/*хз что делает*/
+    box-shadow: 0 15px 25px ;
+}
+h2{
+    padding: 0;
+    margin: 0 0 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+.user-box {
+    position: relative;
+}
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #141031;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #141031;
+    background: transparent;
+}
+input::placeholder {
+    color: #fff;
+}
+.login-box button {
+    margin-top: 60px ;
+    background-color: #141031;
+    border-radius: 10px;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 5%;
+    height: 60px;
+    transform: 1s;
+}
+.login-box button:active {
+    background-color: #fff;
+    color: #141031;
+}
+p {
+    color: #aeaeae;
+    font-size: .8em;
+}
+.p2 {
+    color: #aeaeae;
+    font-size: .8em;
+    margin-top: 15px;
+}
+a {
+    text-decoration: none;
+}

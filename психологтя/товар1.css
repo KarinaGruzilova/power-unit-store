@@ -1,0 +1,734 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.h {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: .8em;
+}
+.info .h {
+    margin-bottom: 5%;
+}
+h1 {
+    font-size: 1.5em;
+    font-family: "Protest Guerrilla", sans-serif;
+    color: #fff;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 0;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 1em 0 .5em;
+}
+h6{
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 5px 0;
+    color: #000;
+}
+.p1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: .8em;
+    margin: 0;
+}
+.p2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    margin: 0;
+}
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: #0B1957;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.info .row {
+    margin: 20px 0;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0B1957;
+    align-items: center;
+    height: 40px;
+    top: 0; left: 0; right: 0;
+    padding: 1% 2%;
+}
+select {
+    margin: 5% 0 10% 0;
+    width: 50%;
+    border:1px solid #000;
+    border-radius: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 80px ;
+}
+.burger-btn {
+    position: relative;
+    height: 30px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: none;
+}
+.burger_link {
+    color: #fff;
+    margin: 0 20px;
+}
+@media (max-width :789px) {
+    .burger-btn {
+        display: block;
+        margin-left: 100px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 10px 0;
+    }
+    header li {
+        margin: 5px 0;
+    }
+    .burger_link {
+        display: block;
+        color: #fff;
+    }
+    .burger {
+        position: absolute;
+        background-color: #0B1957;
+        right: 0;
+        top:-450px;
+        padding: 40px 0 0 0 ;
+        width: 145px;
+        transition:.5s;
+    }
+    header.open .burger {
+        transform: translateY(450px);
+    }
+}
+.burger-btn span {
+    position: absolute;
+    height: 1px;
+    width: 26px;
+    background-color: #fff;
+    left: 8px;
+    transition: transform .5s, opasity .5s;
+}
+.burger-btn span:nth-child(1) {
+    transform: translateY(8px);
+}
+.burger-btn span:nth-child(3) {
+    transform: translateY(-8px);
+}
+header.open .burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+header.open .burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    width: 15px;
+}
+header.open .burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    width: 15px;
+}
+header button {
+    position: relative;
+    z-index: 6;
+    font-size: 1em;
+    transition-duration: 0.4s;
+    width: 60px;
+    height: 30px;
+    border-radius: 10PX;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+header button:hover {
+    background-color: black;
+    color: #fff;
+}
+header li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    color: #fff;
+}
+header .row {
+    justify-content: center;
+    align-items: center;
+}
+main {
+    margin: 8%;
+}
+.frame1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.img1 {
+    width: 45%;
+    height: 500px;
+    padding: 10px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.stars {
+    height: 32px;
+    width: 32px;
+}
+.rub {
+    color: #41f884;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    margin: 0;
+}
+input {
+    border-radius: 10px;
+    border: 1px solid #141031;
+    height: 40px;
+    width: 60px;
+    margin-right: 20px;
+}
+button {
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    background: #0B1957;
+    height: 40px;
+    width: 35%;
+}
+button:active {
+    color: #0B1957;
+    background: #fff;
+    border: 1px solid #0B1957;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+li {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+.j {
+    padding: 0 10px ;
+    
+}
+.j2 {
+    margin-top: 10px;
+}
+.j1 {
+    position: relative;
+    margin-top: 10px;
+}
+.j1 li::before {
+    border-bottom: 1.6px dotted rgba(204,214,228,.6);
+    bottom: -0.3em;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8%;
+}
+.coms {
+    width: 585px;
+    margin-left: 20px ;
+}
+.coms form {
+    background-color: #d4dae4;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.com {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+    align-items: center;
+}
+.com img {
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+form input {
+    height: 25px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(0, 0, 0);
+    border: none;
+    margin-bottom: 10px;
+}
+.otzivs {
+    background-color: #5884e7;
+    color: #fff;
+    margin: 0;
+    padding: 4% 8%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: auto;
+    background-color: rgba(255,255,255,.6);
+    backdrop-filter: blur(10px);
+    padding: 2% 3%;
+    margin-top: 2%;
+    color: #000;
+    border-radius: 15px;
+}
+.form:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+.rowotz{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.otzivs .star {
+    height: 50%;
+}
+
+.otzivs img {
+    height: 200px;
+    border-radius: 100px;
+}
+.footer {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    width: 100%s;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: center;
+    height: 80px;
+    padding: 1% 2%;
+    color: #141031;
+}
+.h1_1 {
+    color: #141031;
+}
+.menu3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    color: #141031;
+}
+@media (min-width: 1030px) and (max-width: 1200px) {
+    main {
+        margin: 12% 5%;
+    }
+    li,.h2, .p2{
+        font-size: .6em;
+    }
+    h1,h3{
+        font-size: 1.2em;
+    }
+    .h {
+        font-size: .6em;
+        margin: 0;
+    }
+    .img1 {
+        height: 320px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .description h2 {
+        margin-bottom: 20px;
+    }
+    h4 {
+        font-size: .8em;
+    }
+    .p1 {
+        font-size: .7em;
+    }
+    .form {
+        width: 220px;
+    }
+    .stars , .otzivs .star {
+        width: 20px;
+        height: 20px;
+    }
+    .rub {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+    .otzivs img {
+        height: 150px;
+        width: 150px;
+    }
+    .col {
+        width: 290px;
+    }
+    .coms {
+        width: 550px;
+    }
+}
+@media (min-width: 790px) and (max-width: 1029px) {
+    header {
+        height: 8%;
+    }
+    main {
+        margin: 12% 5%;
+    }
+    nav ul {
+        margin-right: 40px;
+    }
+    nav li {
+        font-size: .6em;
+    }
+    li,.h2, .p2{
+        font-size: .6em;
+    }
+    h1,h3{
+        font-size: 1em;
+    }
+    .h {
+        font-size: .6em;
+        margin: 0;
+    }
+    .img1 {
+        height: 320px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h4 {
+        font-size: .8em;
+    }
+    .p1 {
+        font-size: .6em;
+    }
+    .form {
+        width: 160px;
+    }
+    .stars , .otzivs .star {
+        width: 20px;
+        height: 20px;
+    }
+    .rub {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+    .row {
+        height: 50px;
+    }
+    .otzivs img {
+        height: 100px;
+        width: 100px;
+    }
+    .com img {
+        width: 32px;
+        height: 32px;
+    }
+    .com form {
+        padding: 10px 15px;
+    }
+    .otzivs .row {
+        height: auto;
+    }
+    .col {
+        width: 314px;
+    }
+    .coms {
+        width: 375px;
+        margin: 0%;
+    }
+}
+@media (min-width: 500px) and (max-width: 789px) {
+    header {
+        height: 5%;
+    }
+    .menu2 {
+        visibility: visible;
+        display: flex;
+        height: 40%;
+        width: 20px;
+    }
+    li,.h2, .p2{
+        font-size: .5em;
+    }
+    .col li {
+        font-size: .8em;
+    }
+    .otzivs .p2 {
+        font-size: .4em;
+    }
+    header button {
+        width: 80px;
+        font-size: .7em;
+    }
+    h1{
+        font-size: .9em;
+    }
+    main {
+        margin: 15% 5% 0 5%;
+    }
+    .h {
+        font-size: .5em;
+        margin-bottom: 30px;
+    }
+    .img1 {
+        margin-top: 40px;
+        height: 200px;
+    }
+    h6 {
+        font-size: 1.2em;
+        display: inline;
+    }
+    header h2, .info h2 {
+        display: none;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .rub {
+        font-size: 1.5em;
+        margin: 5px 0 10px 0;
+    }
+    button, input {
+        height: 30px;
+        font-size: .6em;
+    }
+    .frame1 {
+        margin: 4% 0;
+    }
+    h4 {
+        font-size: .8em;
+    }
+    .p1, h3 {
+        font-size: .6em;
+    }
+    .form {
+        width: 114px;
+    }
+    .otzivs .p2, h3 {
+        font-size: .7em;
+    }
+    .otzivs .stars , .otzivs .star {
+        width: 10px;
+        height: 10px;
+        margin: 5px 0 10px 0;
+    }
+    .rub {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+    .description {
+        margin-bottom:60px;
+    }
+    .row {
+        height: 50px;
+    }
+    .otzivs img {
+        height: 40px;
+        width: 40px;
+    }
+    .com img {
+        width: 32px;
+        height: 32px;
+    }
+    .com form {
+        padding: 10px 15px;
+    }
+    .otzivs .row {
+        height: auto;
+    }
+    .col {
+        width: 400px;
+    }
+    .coms {
+        width: 100%;
+        margin: 40px  40px 0 0;
+        height: auto;
+    }
+    .row {
+        height: auto;
+    }
+}
+@media (max-width:499px) {
+    header {
+        height: 5%;
+    }
+    .menu2 {
+        visibility: visible;
+        display: flex;
+        height: 40%;
+        width: 20px;
+    }
+    header button {
+        width: 40px;
+        height: 20px;
+    }
+    li,.h2 {
+        font-size: .6em;
+    }
+    .otzivs .p2 {
+        font-size: .4em;
+    }
+    h1 {
+        font-size: .9em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    main {
+        margin: 20% 5% 0 5%;
+    }
+    .h {
+        font-size: .6em;
+        margin-bottom: 30px;
+    }
+    .img1 {
+        margin-top: 40px;
+        height: 250px;
+        width: 80%;
+    }
+    .info h2 {
+        display: none;
+    }
+    .stars {
+        width: 12px;
+        height: 12px;
+    }
+    .rub {
+        font-size: 1.5em;
+        margin: 5px 0 10px 0;
+    }
+    .row {
+        height: 5px;
+    }
+    button, input {
+        height: 30px;
+        font-size: .6em;
+    }
+    .frame1 {
+        margin-top: 4%;
+        flex-wrap: wrap;
+    }
+    .info {
+        width: 290px;
+    }
+    h4, h3 {
+        font-size: .8em;
+    }
+    h6 {
+        display: block;
+        font-size: .9em;
+    }
+    .otzivs .p2 {
+        font-size: .8em;
+    }
+    .p1, .p2{
+        font-size: .8em;
+    }
+    .rowotz {
+        justify-content: center;
+    }
+    .form {
+        width: 250px;
+    }
+    .otzivs .stars , .otzivs .star {
+        width: 10px;
+        height: 10px;
+        margin: 5px 0 10px 0;
+    }
+    .rub {
+        font-size: 2em;
+        margin: 5px 0;
+    }
+    .description {
+        margin-bottom:60px;
+        justify-content: center;
+    }
+    .row {
+        height: 50px;
+    }
+
+    .otzivs img {
+        height: 40px;
+        width: 40px;
+    }
+    .com img {
+        width: 32px;
+        height: 32px;
+    }
+    .com form {
+        padding: 10px 15px;
+    }
+    .otzivs .row {
+        height: auto;
+    }
+    .col {
+        width: 334px;
+    }
+    .coms {
+        width: 100%;
+        margin-top: 40px;
+        height: auto;
+    }
+    .row {
+        height: auto;
+    }
+}
